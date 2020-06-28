@@ -8,13 +8,17 @@ html{
 	min-width: 960px;
 }
 
+#scroll{
+	overflow: hidden !important;
+}
+
 body{
 	overflow-x: hidden !important;
 	display: block;
 	width: 100%;
 	
 	margin: 0px auto;
-	padding-top: 1%;
+	padding-top: 0%;
 	padding-bottom: 2%;
 }
 
@@ -26,7 +30,7 @@ body{
 	display: block;
 	width: 480px;
 	height: auto;
-	margin-bottom: -80px;
+	margin-bottom: -96px;
 }
 
 #name{
@@ -57,11 +61,7 @@ h2 a{
 	
 	color: #f49ec4;
 }
-/*
-h2 a:hover{
-	color: #181719;
-}
-*/
+
 h3{
 	text-align: center;
 }
@@ -86,19 +86,23 @@ h3{
 	float: right;	
 }
 
-iframe{
+#demo{
 	background-image: url("img/thumbnailVector.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-#nav{
+iframe{
+	border: 0px;
+}
+
+.nav{
 	padding: 24px;
 	padding-bottom: 32px;
 	float: none;
 }
 
-#nav a{
+.nav a{
 	text-decoration:none;
 	font-size: 24px;
 	color: #181719;
@@ -111,8 +115,18 @@ iframe{
 	margin-right: 50px;
 }
 
-#nav a:hover{
+.nav a:hover{
 	color: #f49ec4;
+}
+
+#anim{	
+	margin-right: 180px;
+}
+
+#content .nav{
+	padding-top: 0px;
+	padding-bottom: 12px;
+	margin-right: 180px;
 }
 
 a{
@@ -140,6 +154,7 @@ p a{
 	
 	width: 100%;
 	padding-top: 18px;
+	padding-bottom: 4px;
 	position:absolute;
 	height: 24px;
 
@@ -152,7 +167,7 @@ p a{
 /*GALLERY SECTION*/
 .galleryRow{
 	display: block;
-	margin: 0px 0px 16px;
+	margin: 0px 0px 12px;
 }
 
 .galleryRow img, .galleryRow video{
