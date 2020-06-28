@@ -1,0 +1,179 @@
+/*woot css up inpxere*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+html{
+	background-color: #fafafa;
+	font-family: 'Roboto', sans-serif;
+	min-width: 960px;
+}
+
+body{
+	overflow-x: hidden !important;
+	display: block;
+	width: 100%;
+	
+	margin: 0px auto;
+	padding-top: 1%;
+	padding-bottom: 2%;
+}
+
+#header{
+	display: inline-block;
+}
+
+#mug{
+	display: block;
+	width: 480px;
+	height: auto;
+	margin-bottom: -80px;
+}
+
+#name{
+	width: 480px;
+	height: auto;
+	
+	float: right;
+	position: absolute;
+	right: 7%;
+	margin-top: 6%;
+}
+
+h1{
+	text-align: center;
+}
+
+h2{
+	float: right;
+	position: absolute;
+	right: 12.5%;
+	margin-top: 15%;
+	
+	color: #f49ec4;
+}
+
+h2 a{
+	margin: 0px 12px;
+	
+	color: #f49ec4;
+}
+/*
+h2 a:hover{
+	color: #181719;
+}
+*/
+h3{
+	text-align: center;
+}
+
+#container{
+	display: block;
+	width: 960px;
+	position: relative;
+	float: none;
+	
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#content{
+	display: block;
+	width: 960px;
+	height: auto;
+	
+	margin: 0px auto;
+	margin-left: -12.5px;
+	float: right;	
+}
+
+iframe{
+	background-image: url("img/thumbnailVector.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#nav{
+	padding: 24px;
+	padding-bottom: 32px;
+	float: none;
+}
+
+#nav a{
+	text-decoration:none;
+	font-size: 24px;
+	color: #181719;
+	font-weight: bold;
+	
+	float: right;
+}
+
+.navLeft{
+	margin-right: 50px;
+}
+
+#nav a:hover{
+	color: #f49ec4;
+}
+
+a{
+	text-decoration: none !important;
+}
+
+div{
+	margin: 12px;
+}
+
+p{
+	color: #181719;
+	font-size: 18px;
+	
+	text-align: center;
+}
+
+p a{
+	color: #f49ec4;
+}
+
+#footer{
+	display: block;
+	margin: auto;
+	
+	width: 100%;
+	padding-top: 18px;
+	position:absolute;
+	height: 24px;
+
+	font-size: 12px;
+	font-weight: bold;
+	text-align:center;
+	color: #6b6b6b;
+}
+
+/*GALLERY SECTION*/
+.galleryRow{
+	display: block;
+	margin: 0px 0px 16px;
+}
+
+.galleryRow img, .galleryRow video{
+	display: inline-block;	
+	max-width: 32%;
+}
+
+.galleryMiddle{
+	padding: 0px 15px;
+}
+
+.galleryLeft{
+	padding: 0px 15px 0px 0px;
+}
+
+.galleryRow2{
+	display: block;
+	margin: 0px 0px 16px;
+}
+
+.galleryRow2 img, .galleryRow2 video{
+	display: inline-block;	
+	max-width: 49%;
+}
