@@ -97,6 +97,7 @@ iframe{
 }
 
 .nav{
+	display: block;
 	padding: 24px;
 	padding-bottom: 32px;
 	float: none;
