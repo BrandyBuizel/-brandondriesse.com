@@ -26,11 +26,18 @@ body{
 	display: inline-block;
 }
 
+#mugParent{
+	margin: 0px;
+	margin-bottom: -96px;
+}
+
 #mug{
 	display: block;
 	width: 480px;
 	height: auto;
-	margin-bottom: -96px;
+	
+	position: relative;
+	z-index: -1;
 }
 
 #name{
@@ -94,6 +101,7 @@ h3{
 
 iframe{
 	border: 0px;
+	padding-bottom: 10px;
 }
 
 .nav{
@@ -114,6 +122,8 @@ iframe{
 
 .navLeft{
 	margin-right: 50px;
+	
+	position: relative;
 }
 
 .nav a:hover{
