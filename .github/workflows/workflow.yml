@@ -12,7 +12,7 @@ jobs:
     - uses: actions/checkout@master
     - uses: BrandyBuizel/-brandondriesse.com@master
       with:
-        args: --acl public-read --follow-symlinks --delete
+        args: --acl public-read --follow-symlinks --delete --exclude '.git/*'
       env:
         AWS_S3_BUCKET: ${{ brandondriesse.com }}
         AWS_ACCESS_KEY_ID: ${{ AKIAICNHYET3HZRJAHZA }}
