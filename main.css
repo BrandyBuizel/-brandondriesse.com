@@ -223,3 +223,78 @@ p a{
 	display: inline-block;	
 	max-width: 49%;
 }
+
+/*CONTACT FORM*/
+form{
+    position: relative;
+    width: 48%;
+}
+
+input, textarea{ 
+    outline: none;
+}
+
+.form{
+    padding: 36px;
+	padding-top: 12px;
+}
+
+.form input,
+.form textarea{
+    display: block;
+    width: 96%;
+    padding: 15px;
+    margin-bottom: 10px;
+	
+    border: none;
+    border-radius: 20px;
+    background: #eeeeee;
+	resize: none;
+}
+
+button{
+	display: block;
+	margin: auto;
+	width: 60%;
+    padding: 10px;
+    margin-top: 20px;
+	
+	text-decoration:none;
+	font-size: 24px;
+	color: #ffffff;
+	font-weight: bold;
+	
+    border-radius: 20px;
+    border: none;
+    background: #f49ec4; 
+}
+
+button:hover{
+    background: #181719;
+}
+
+#about{	
+	display: block;
+	margin: auto;
+	position: absolute;
+    width: 46.5%;
+	
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 45%;
+	
+	text-decoration:none;
+	font-weight: bold;
+}
+
+#about h3{
+	font-size: 18px;
+	color: #f49ec4;
+}
+
+#about p{
+	font-size: 16px;
+	text-align: left;
+	width: 92%;
+	margin-left: 4%;
+}
