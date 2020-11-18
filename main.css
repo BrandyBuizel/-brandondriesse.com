@@ -101,7 +101,7 @@ h3{
 
 iframe{
 	border: 0px;
-	padding-bottom: 10px;
+	padding-bottom: 4px;
 }
 
 .nav{
@@ -172,11 +172,27 @@ p a{
 	padding-bottom: 4px;
 	position:absolute;
 	height: 24px;
+}
 
-	font-size: 12px;
+#footer p{
+	font-size: 14px;
 	font-weight: bold;
 	text-align:center;
 	color: #6b6b6b;
+}
+
+#footer img{
+	padding-left: 4px;
+	padding-right: 4px;
+	filter: brightness(1);
+}
+
+#footer img:hover{
+	filter: brightness(0);
+}
+
+#imgLeft{
+	margin-left: 43.5%;
 }
 
 /*GALLERY SECTION*/
