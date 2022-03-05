@@ -12,6 +12,7 @@ html{
 	overflow: hidden !important;
 }
 
+/*MAIN CONTENT*/
 body{
 	overflow-x: hidden !important;
 	display: block;
@@ -163,12 +164,13 @@ p a{
 	color: #f49ec4;
 }
 
+/*FOOTER SECTION*/
 #footer{
 	display: block;
 	margin: auto;
 	
 	width: 100%;
-	padding-top: 16px;
+	padding-top: 15px;
 	padding-bottom: 4px;
 	position:absolute;
 	height: 24px;
@@ -179,6 +181,8 @@ p a{
 	font-weight: bold;
 	text-align:center;
 	color: #6b6b6b;
+
+	padding-bottom: 4px;
 }
 
 #footer img{
@@ -253,6 +257,8 @@ textarea{
     border-radius: 20px;
     background: #eeeeee;
 	resize: none;
+
+	font-family: 'Roboto', sans-serif;
 }
 
 button{
