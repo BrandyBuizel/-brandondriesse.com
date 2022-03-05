@@ -120,14 +120,14 @@ iframe{
 	float: right;
 }
 
+.nav a:hover{
+	color: #f49ec4;
+}
+
 .navLeft{
 	margin-right: 52px;
 	
 	position: relative;
-}
-
-.nav a:hover{
-	color: #f49ec4;
 }
 
 #anim{	
@@ -168,7 +168,7 @@ p a{
 	margin: auto;
 	
 	width: 100%;
-	padding-top: 18px;
+	padding-top: 16px;
 	padding-bottom: 4px;
 	position:absolute;
 	height: 24px;
@@ -198,10 +198,11 @@ p a{
 /*GALLERY SECTION*/
 .galleryRow{
 	display: block;
-	margin: 0px 0px 12px;
+	margin: 0px 0px 9px;
 }
 
-.galleryRow img, .galleryRow video{
+.galleryRow img, 
+.galleryRow video{
 	display: inline-block;	
 	max-width: 32%;
 }
@@ -219,7 +220,8 @@ p a{
 	margin: 0px 0px 16px;
 }
 
-.galleryRow2 img, .galleryRow2 video{
+.galleryRow2 img, 
+.galleryRow2 video{
 	display: inline-block;	
 	max-width: 49%;
 }
@@ -230,7 +232,8 @@ form{
     width: 48%;
 }
 
-input, textarea{ 
+input, 
+textarea{ 
     outline: none;
 }
 
