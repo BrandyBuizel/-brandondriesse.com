@@ -1,5 +1,3 @@
-
-
 $(document).ready(function(){
 // menu slide
   $(".menuButtonContainer").click(function() {

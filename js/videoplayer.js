@@ -1,5 +1,3 @@
-
-
 $(document).ready(function() {
 // opacity when paused
   var vid = document.getElementById("videoBox");
