@@ -80,6 +80,7 @@ h3{
 	position: relative;
 	float: none;
 	
+	margin-top: 0;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -170,7 +171,7 @@ p a{
 	margin: auto;
 	
 	width: 100%;
-	padding-top: 15px;
+	padding-top: 8px;
 	padding-bottom: 4px;
 	position:absolute;
 	height: 24px;
@@ -182,7 +183,9 @@ p a{
 	text-align:center;
 	color: #6b6b6b;
 
-	padding-bottom: 4px;
+	margin-top: 6px;
+	margin-bottom: 0px;
+	padding: 0px;
 }
 
 #footer img{
@@ -196,7 +199,7 @@ p a{
 }
 
 #imgLeft{
-	margin-left: 41%;
+	margin-left: 40%;
 }
 
 /*GALLERY SECTION*/
