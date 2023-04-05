@@ -74,6 +74,18 @@ h3{
 	text-align: center;
 }
 
+h3 a{
+	color: #f49ec4;
+}
+
+h4{
+	text-align: center;
+}
+
+h4 a{
+	color: #f49ec4;
+}
+
 #container{
 	display: block;
 	width: 960px;
@@ -165,6 +177,13 @@ p{
 
 p a{
 	color: #f49ec4;
+}
+
+.desc{
+	display: block;
+	margin: auto;
+
+	width: 86%;
 }
 
 /*FOOTER SECTION*/
