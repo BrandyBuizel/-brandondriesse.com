@@ -115,6 +115,10 @@ h4 a{
 	background-size: cover;
 }
 
+#demo a:hover{
+	
+}
+
 iframe{
 	border: 0px;
 	padding-bottom: 0px;
@@ -252,6 +256,18 @@ p a{
 .galleryRow2 video{
 	display: inline-block;	
 	max-width: 49%;
+}
+
+.galleryRow4{
+	display: block;
+	margin: 0px 0px 9px;
+}
+
+.galleryRow4 img, 
+.galleryRow4 video{
+	display: inline-block;	
+	max-width: 24%;
+	padding-left: 6px;
 }
 
 /*CONTACT FORM*/
