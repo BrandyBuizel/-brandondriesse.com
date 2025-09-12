@@ -58,7 +58,7 @@ h1{
 h2{
 	float: right;
 	position: absolute;
-	right: 12.5%;
+	right: 8%;
 	margin-top: 15%;
 	
 	color: #f49ec4;
@@ -342,4 +342,74 @@ button:hover{
 	text-align: left;
 	width: 92%;
 	margin-left: 4%;
+}
+
+/****************/
+/* Writing Page */
+/****************/
+
+.writing-credits{
+	float: right;
+    width: 70%;
+	min-width: 640px;
+}
+
+.writing-credits > .content-heading{
+	margin: 0;
+	padding-top: -2px;
+
+	font-size: 18px;
+	color: #f49ec4;
+}
+
+.writing-credits > h4{
+	text-align: left;
+
+	margin: .5em;
+}
+
+.writing-credits > h4 > a{
+	color: #181719;
+}
+
+.writing-credits > h4 > a:hover{
+	color: #f49ec4;
+}
+
+.writing-credits > p{
+	text-align: left;
+	text-indent: 2em;
+
+	margin: 0;
+}
+
+/*************/
+/* BIO IMAGE */
+/*************/
+
+img.bio-image{
+	width: 248px;
+}
+
+#content > img.bio-image:hover{
+	filter: opacity(40%);
+}
+
+#content > h4.bio-image{
+	position: absolute;
+	margin: 0;
+	float: none;
+	z-index: 1;
+
+	text-align: center;
+
+	width: 248px;
+	height: 248px;
+	background-color: rgba(255, 255, 255, 0.6);
+
+	filter: opacity(0%);
+}
+
+#content > h4.bio-image:hover{
+	filter: opacity(100%);
 }
