@@ -2,18 +2,18 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
-html{
+html {
 	background-color: #fafafa;
 	font-family: 'Roboto', sans-serif;
 	min-width: 960px;
 }
 
-#scroll{
+#scroll {
 	overflow: hidden !important;
 }
 
 /*MAIN CONTENT*/
-body{
+body {
 	overflow-x: hidden !important;
 	display: block;
 	width: 100%;
@@ -23,16 +23,16 @@ body{
 	padding-bottom: 0px;
 }
 
-#header{
+#header {
 	display: inline-block;
 }
 
-#mugParent{
+#mugParent {
 	margin: 0px;
 	margin-bottom: -96px;
 }
 
-#mug{
+#mug {
 	display: block;
 	width: auto;
 	height: 260px;
@@ -41,7 +41,7 @@ body{
 	z-index: -1;
 }
 
-#name{
+#name {
 	width: 480px;
 	height: auto;
 	
@@ -51,11 +51,11 @@ body{
 	margin-top: 6%;
 }
 
-h1{
+h1 {
 	text-align: center;
 }
 
-h2{
+h2 {
 	float: right;
 	position: absolute;
 	right: 8%;
@@ -64,29 +64,29 @@ h2{
 	color: #f49ec4;
 }
 
-h2 a{
+h2 a {
 	margin: 0px 12px;
 	
 	color: #f49ec4;
 }
 
-h3{
+h3 {
 	text-align: center;
 }
 
-h3 a{
+h3 a {
 	color: #f49ec4;
 }
 
-h4{
+h4 {
 	text-align: center;
 }
 
-h4 a{
+h4 a {
 	color: #f49ec4;
 }
 
-#container{
+#container {
 	display: block;
 	width: 960px;
 	position: relative;
@@ -98,7 +98,7 @@ h4 a{
 	margin-right: auto;
 }
 
-#content{
+#content {
 	display: block;
 	width: 960px;
 	height: auto;
@@ -109,25 +109,25 @@ h4 a{
 	float: right;	
 }
 
-#demo{
+#demo {
 	background-image: url("img/thumbnailVector.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-iframe{
+iframe {
 	border: 0px;
 	padding-bottom: 0px;
 }
 
-.nav{
+.nav {
 	display: block;
 	padding: 24px;
 	padding-bottom: 16px;
 	float: none;
 }
 
-.nav a{
+.nav a {
 	text-decoration:none;
 	font-size: 24px;
 	color: #181719;
@@ -136,50 +136,50 @@ iframe{
 	float: right;
 }
 
-.nav a:hover{
+.nav a:hover {
 	color: #f49ec4;
 }
 
-.navLeft{
+.navLeft {
 	margin-right: 52px;
 	
 	position: relative;
 }
 
-#anim{	
+#anim {	
 	margin-right: 180px;
 }
 
-#shot{	
+#shot {	
 	margin-right: 225px;
 }
 
-#content .nav{
+#content .nav {
 	padding-top: 0px;
 	padding-bottom: 12px;
 	margin-right: 180px;
 }
 
-a{
+a {
 	text-decoration: none !important;
 }
 
-div{
+div {
 	margin: 12px;
 }
 
-p{
+p {
 	color: #181719;
 	font-size: 18px;
 	
 	text-align: center;
 }
 
-p a{
+p a {
 	color: #f49ec4;
 }
 
-.desc{
+.desc {
 	display: block;
 	margin: auto;
 
@@ -187,7 +187,7 @@ p a{
 }
 
 /*FOOTER SECTION*/
-#footer{
+#footer {
 	display: block;
 	margin: auto;
 	
@@ -198,7 +198,7 @@ p a{
 	height: 24px;
 }
 
-#footer p{
+#footer p {
 	font-size: 14px;
 	font-weight: bold;
 	text-align:center;
@@ -209,81 +209,81 @@ p a{
 	padding: 0px;
 }
 
-#footer img{
+#footer img {
 	padding-left: 4px;
 	padding-right: 4px;
 	filter: brightness(1);
 }
 
-#footer img:hover{
+#footer img:hover {
 	filter: brightness(0);
 }
 
-#imgLeft{
+#imgLeft {
 	margin-left: 36%;
 }
 
 /*GALLERY SECTION*/
-.galleryRow{
+.galleryRow {
 	display: block;
 	margin: 0px 0px 9px;
 }
 
 .galleryRow img, 
-.galleryRow video{
+.galleryRow video {
 	display: inline-block;	
 	max-width: 32%;
 }
 
-.galleryMiddle{
+.galleryMiddle {
 	padding: 0px 15px;
 }
 
-.galleryLeft{
+.galleryLeft {
 	padding-right: 12px;
 }
 
-.galleryRow2{
+.galleryRow2 {
 	display: block;
 	margin: 0px 0px 14px;
 }
 
 .galleryRow2 img, 
-.galleryRow2 video{
+.galleryRow2 video {
 	display: inline-block;	
 	max-width: 49%;
 }
 
-.galleryRow4{
+.galleryRow4 {
 	display: block;
 	margin: 0px 0px 9px;
 }
 
 .galleryRow4 img, 
-.galleryRow4 video{
+.galleryRow4 video {
 	display: inline-block;	
 	max-width: 24%;
 	padding-left: 6px;
 }
 
 /*CONTACT FORM*/
-form{
+form {
     position: relative;
     width: 48%;
 }
 
 input, 
-textarea{ 
+textarea { 
     outline: none;
 }
 
-.form{
+.form {
     padding: 36px;
 	padding-top: 12px;
 }
 
 .form input,
-.form textarea{
+.form textarea {
     display: block;
     width: 96%;
     padding: 15px;
@@ -297,7 +297,7 @@ textarea{
 	font-family: 'Roboto', sans-serif;
 }
 
-button{
+button {
 	display: block;
 	margin: auto;
 	width: 60%;
@@ -314,11 +314,11 @@ button{
     background: #f49ec4; 
 }
 
-button:hover{
+button:hover {
     background: #181719;
 }
 
-#about{	
+#about {	
 	display: block;
 	margin: auto;
 	position: absolute;
@@ -332,12 +332,12 @@ button:hover{
 	font-weight: bold;
 }
 
-#about h3{
+#about h3 {
 	font-size: 18px;
 	color: #f49ec4;
 }
 
-#about p{
+#about p {
 	font-size: 16px;
 	text-align: left;
 	width: 92%;
@@ -348,13 +348,15 @@ button:hover{
 /* Writing Page */
 /****************/
 
-.writing-credits{
+.writing-credits {
 	float: right;
     width: 70%;
 	min-width: 640px;
+
+	margin-top: 0;
 }
 
-.writing-credits > .content-heading{
+.writing-credits > .content-heading {
 	margin: 0;
 	padding-top: -2px;
 
@@ -362,21 +364,33 @@ button:hover{
 	color: #f49ec4;
 }
 
-.writing-credits > h4{
+.writing-credits > h4 {
 	text-align: left;
 
 	margin: .5em;
 }
 
-.writing-credits > h4 > a{
+.writing-credits > h5 {
+	margin: 0;
+	margin-top: -0.5em;
+	margin-bottom: .5em;
+
+	color: #3bd1fe;
+	color: #6b6b6b;
+	/*
+	text-shadow: #181719 1px 1px;
+	*/
+}
+
+.writing-credits > h4 > a {
 	color: #181719;
 }
 
-.writing-credits > h4 > a:hover{
+.writing-credits > h4 > a:hover {
 	color: #f49ec4;
 }
 
-.writing-credits > p{
+.writing-credits > p {
 	text-align: left;
 	text-indent: 2em;
 
@@ -387,15 +401,15 @@ button:hover{
 /* BIO IMAGE */
 /*************/
 
-img.bio-image{
+img.bio-image {
 	width: 248px;
 }
 
-#content > img.bio-image:hover{
+#content > img.bio-image:hover {
 	filter: opacity(40%);
 }
 
-#content > h4.bio-image{
+#content > h4.bio-image {
 	position: absolute;
 	margin: 0;
 	float: none;
@@ -410,6 +424,6 @@ img.bio-image{
 	filter: opacity(0%);
 }
 
-#content > h4.bio-image:hover{
+#content > h4.bio-image:hover {
 	filter: opacity(100%);
 }
