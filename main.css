@@ -1,4 +1,4 @@
-/*woot css up inpxere*/
+/*woot css up in here*/
 
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
@@ -12,7 +12,9 @@ html {
 	overflow: hidden !important;
 }
 
+/**************/
 /*MAIN CONTENT*/
+/**************/
 body {
 	overflow-x: hidden !important;
 	display: block;
@@ -186,7 +188,9 @@ p a {
 	width: 86%;
 }
 
+/****************/
 /*FOOTER SECTION*/
+/****************/
 #footer {
 	display: block;
 	margin: auto;
@@ -220,10 +224,12 @@ p a {
 }
 
 #imgLeft {
-	margin-left: 36%;
+	margin-left: 33.3%;
 }
 
+/*****************/
 /*GALLERY SECTION*/
+/*****************/
 .galleryRow {
 	display: block;
 	margin: 0px 0px 9px;
@@ -266,7 +272,9 @@ p a {
 	padding-left: 6px;
 }
 
+/**************/
 /*CONTACT FORM*/
+/**************/
 form {
     position: relative;
     width: 48%;
@@ -360,7 +368,7 @@ button:hover {
 	margin: 0;
 	padding-top: -2px;
 
-	font-size: 18px;
+	font-size: 21px;
 	color: #f49ec4;
 }
 
