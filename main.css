@@ -374,14 +374,20 @@ button:hover {
 
 .writing-credits > h4 {
 	text-align: left;
+	margin: 0.5em;
+	margin-top: 1em;
+}
 
-	margin: .5em;
+.writing-credits > h4 > a {
+	font-size: 18px;
 }
 
 .writing-credits > h5 {
 	margin: 0;
 	margin-top: -0.5em;
-	margin-bottom: .5em;
+	margin-bottom: 0.5em;
+
+	font-size: 13px;
 
 	color: #3bd1fe;
 	color: #6b6b6b;
@@ -401,6 +407,9 @@ button:hover {
 .writing-credits > p {
 	text-align: left;
 	text-indent: 2em;
+
+	font-size: 15px;
+	font-weight: 600;
 
 	margin: 0;
 }
