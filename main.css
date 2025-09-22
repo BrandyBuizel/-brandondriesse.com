@@ -406,12 +406,17 @@ button:hover {
 
 .writing-credits > p {
 	text-align: left;
-	text-indent: 2em;
+	text-indent: -2em;
 
 	font-size: 15px;
 	font-weight: 600;
 
 	margin: 0;
+	margin-left: 2em;
+}
+
+p.writing-entry {
+	text-justify: inter-word;
 }
 
 /*************/
