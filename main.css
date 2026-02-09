@@ -84,9 +84,9 @@ h4 {
 	text-align: center;
 }
 
-h4 a {
-	color: #f49ec4;
-}
+h4 a { color: #f49ec4;}
+h4 > a { color: #058891 !important; }
+h4 > a:hover { color: #3bd1fe !important; }
 
 #container {
 	display: block;
