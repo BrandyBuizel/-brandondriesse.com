@@ -493,3 +493,10 @@ img.bio-image {
 	margin-right: auto;
 	list-style-position: inside;
 }
+
+.ko-fi {
+	top: 164px;
+    position: fixed;
+}
+.ko-fi:hover { transform: translateY(5px); }
+.ko-fi:active { transform: translateY(-3px); }
