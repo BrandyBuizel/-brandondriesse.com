@@ -2,8 +2,33 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
+:root { color-scheme: light dark; }
+
+/* LIGHT MODE */
+@media (prefers-color-scheme: light) {
+  	:root {
+    	--bg-color: #fafafa;
+    	--text-color: #181719;
+		--link-color: #f49ec4;
+		--blue-color: #3bd1fe;
+  	}
+}
+
+/* DARK MODE */
+@media (prefers-color-scheme: dark) {
+  	:root {
+    	--bg-color: #181719;
+    	--text-color: #fafafa;
+		--pink-color: #f49ec4;
+		--link-color: #3bd1fe;
+  	}
+
+  	#name { filter: invert(); }
+}
+
 html {
-	background-color: #fafafa;
+	background-color: light-dark(#fafafa, #181719);
+
 	font-family: 'Roboto', sans-serif;
 	min-width: 960px;
 }
@@ -41,6 +66,18 @@ body {
 	
 	position: relative;
 	z-index: -1;
+}
+
+#mug-stamp {
+    width: auto;
+	height: 260px;
+    aspect-ratio: auto;
+
+    position: absolute;
+    z-index: -2;
+	top: 20px;
+
+    pointer-events: none;
 }
 
 #name {
@@ -85,8 +122,8 @@ h4 {
 }
 
 h4 a { color: #f49ec4;}
-h4 > a { color: #058891 !important; }
-h4 > a:hover { color: #3bd1fe !important; }
+h4 > a { color: light-dark(#058891, #3bd1fe) !important; }
+h4 > a:hover { color: light-dark(#3bd1fe, #058891) !important; }
 
 #container {
 	display: block;
@@ -132,7 +169,7 @@ iframe {
 .nav a {
 	text-decoration:none;
 	font-size: 24px;
-	color: #181719;
+	color: var(--text-color);
 	font-weight: bold;
 	
 	float: right;
@@ -172,7 +209,7 @@ div {
 }
 
 p {
-	color: #181719;
+	color: var(--text-color);
 	font-size: 18px;
 	
 	text-align: center;
@@ -220,9 +257,8 @@ p a {
 	filter: brightness(1);
 }
 
-#footer img:hover {
-	filter: brightness(0);
-}
+#footer img:hover { filter: brightness(0); }
+@media (prefers-color-scheme: dark) { #footer img:hover { filter: brightness(0) invert(1); }}
 
 #imgLeft {
 	margin-left: 33.3%;
@@ -410,7 +446,7 @@ button:hover {
 	text-indent: -2em;
 
 	font-size: 15px;
-	font-weight: 600;
+	font-weight: light-dark(600, 400);
 
 	margin: 0;
 	margin-left: 2em;
