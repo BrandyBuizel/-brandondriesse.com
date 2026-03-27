@@ -494,9 +494,10 @@ img.bio-image {
 	list-style-position: inside;
 }
 
-.ko-fi {
-	top: 164px;
-    position: fixed;
-}
+/* Text Color Override */
+#content > h4 {	color: #181719; }
+
+/* Donate Button */
+.ko-fi { top: 164px; position: fixed; }
 .ko-fi:hover { transform: translateY(5px); }
 .ko-fi:active { transform: translateY(-3px); }
