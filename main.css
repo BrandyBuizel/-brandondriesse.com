@@ -450,3 +450,10 @@ img.bio-image {
 #content > h4.bio-image:hover {
 	filter: opacity(100%);
 }
+
+.center {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	list-style-position: inside;
+}
