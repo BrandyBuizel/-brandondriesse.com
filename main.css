@@ -443,7 +443,10 @@ button:hover {
 
 .writing-credits > p {
 	text-align: left;
-	text-indent: -2em;
+    line-height: 1.2em;
+	/*
+	text-indent: -1em;
+	*/
 
 	font-size: 15px;
 	font-weight: light-dark(600, 400);
