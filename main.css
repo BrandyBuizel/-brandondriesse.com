@@ -123,7 +123,7 @@ h4 {
 
 h4 a { color: #f49ec4;}
 h4 > a { color: light-dark(#058891, #3bd1fe) !important; }
-h4 > a:hover { color: light-dark(#3bd1fe, #058891) !important; }
+h4 > a:hover { color: light-dark(#3bd1fe, #5544aa) !important; }
 
 #container {
 	display: block;
