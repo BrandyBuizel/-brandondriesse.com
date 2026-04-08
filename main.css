@@ -226,44 +226,6 @@ p a {
 	width: 86%;
 }
 
-/****************/
-/*FOOTER SECTION*/
-/****************/
-#footer {
-	display: block;
-	margin: auto;
-	
-	width: 100%;
-	padding-top: 8px;
-	padding-bottom: 4px;
-	position:absolute;
-	height: 24px;
-}
-
-#footer p {
-	font-size: 14px;
-	font-weight: bold;
-	text-align:center;
-	color: #6b6b6b;
-
-	margin-top: 6px;
-	margin-bottom: 0px;
-	padding: 0px;
-}
-
-#footer img {
-	padding-left: 4px;
-	padding-right: 4px;
-	filter: brightness(1);
-}
-
-#footer img:hover { filter: brightness(0); }
-@media (prefers-color-scheme: dark) { #footer img:hover { filter: brightness(0) invert(1); }}
-
-#imgLeft {
-	margin-left: 33.3%;
-}
-
 /*****************/
 /*GALLERY SECTION*/
 /*****************/
@@ -495,6 +457,48 @@ img.bio-image {
 	margin-left: auto;
 	margin-right: auto;
 	list-style-position: inside;
+}
+
+/****************/
+/*FOOTER SECTION*/
+/****************/
+#footer {
+	display: block;
+	margin: auto;
+	
+	width: 100%;
+	padding-top: 8px;
+	padding-bottom: 4px;
+	position:absolute;
+	height: 24px;
+}
+
+#footer p {
+	font-size: 14px;
+	font-weight: bold;
+	text-align:center;
+	color: #6b6b6b;
+
+	margin-top: 6px;
+	margin-bottom: 0px;
+	padding: 0px;
+}
+
+#footer img {
+	padding-left: 4px;
+	padding-right: 4px;
+	filter: brightness(1);
+}
+
+#footer img:hover { 
+	filter: brightness(0);
+	transform: scale(120%);
+}
+
+@media (prefers-color-scheme: dark) { #footer img:hover { filter: brightness(0) invert(1); }}
+
+#imgLeft {
+	margin-left: 33.3%;
 }
 
 /* Text Color Override */
