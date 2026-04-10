@@ -259,6 +259,12 @@ p a {
 	max-width: 49%;
 }
 
+.galleryRow3 img, 
+.galleryRow3 video {
+	display: inline-block;	
+	max-width: 32%;
+}
+
 .galleryRow4 {
 	display: block;
 	margin: 0px 0px 9px;
