@@ -259,6 +259,10 @@ p a {
 	max-width: 49%;
 }
 
+#content > div.galleryRow2 > video:nth-child(2) {
+	float: right;
+}
+
 .galleryRow3 img, 
 .galleryRow3 video {
 	display: inline-block;	
