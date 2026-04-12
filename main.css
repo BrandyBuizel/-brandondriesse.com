@@ -119,6 +119,7 @@ h3 a {
 
 h4 {
 	text-align: center;
+	color: light-dark(#181719, #fafafa) !important;
 }
 
 h4 a { color: #f49ec4;}
@@ -259,7 +260,8 @@ p a {
 	max-width: 49%;
 }
 
-#content > div.galleryRow2 > video:nth-child(2) {
+.galleryRow2 > video:nth-child(2),
+.galleryRow2 > iframe:nth-child(2) {
 	float: right;
 }
 
