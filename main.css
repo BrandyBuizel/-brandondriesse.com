@@ -230,7 +230,10 @@ p a {
 /*****************/
 /*GALLERY SECTION*/
 /*****************/
-.galleryRow {
+.galleryRow,
+.galleryRow2,
+.galleryRow3,
+.galleryRow4 {
 	display: block;
 	margin: 0px 0px 9px;
 }
@@ -269,6 +272,8 @@ p a {
 .galleryRow3 video {
 	display: inline-block;	
 	max-width: 32%;
+    padding: .2em;
+	padding-top: 0;
 }
 
 .galleryRow4 {
