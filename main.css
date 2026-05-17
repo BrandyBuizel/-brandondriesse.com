@@ -476,6 +476,8 @@ img.bio-image {
 	list-style-position: inside;
 }
 
+.invert { filter: invert(); }
+
 /****************/
 /*FOOTER SECTION*/
 /****************/
@@ -504,7 +506,12 @@ img.bio-image {
 #footer img {
 	padding-left: 4px;
 	padding-right: 4px;
-	filter: brightness(1);
+
+	width: 32px;
+	height: auto;
+	aspect-ratio: 1/1;
+
+	/* filter: brightness(0) invert(); */
 }
 
 #footer img:hover { 
@@ -514,8 +521,9 @@ img.bio-image {
 
 @media (prefers-color-scheme: dark) { #footer img:hover { filter: brightness(0) invert(1); }}
 
-#imgLeft {
-	margin-left: 33.3%;
+#imgLeft,
+#footer > a:nth-child(1) > img {
+	/* margin-left: 33.3%; */
 }
 
 /* Text Color Override */
