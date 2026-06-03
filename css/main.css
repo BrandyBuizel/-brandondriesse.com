@@ -7,20 +7,28 @@
 /* LIGHT MODE */
 @media (prefers-color-scheme: light) {
   	:root {
-    	--bg-color: #fafafa;
+    	--bg-color:   #fafafa;
     	--text-color: #181719;
-		--link-color: #f49ec4;
+		--pink-color: #f49ec4;
+		--purp-color: #b883ca;
 		--blue-color: #3bd1fe;
+		--green-color:#8bdf92;
+
+		--link-color: #f49ec4;
   	}
 }
 
 /* DARK MODE */
 @media (prefers-color-scheme: dark) {
   	:root {
-    	--bg-color: #181719;
+    	--bg-color:   #181719;
     	--text-color: #fafafa;
 		--pink-color: #f49ec4;
-		--link-color: #3bd1fe;
+		--purp-color: #b883ca;
+		--cyan-color: #3bd1fe;
+		--green-color:#8bdf92;
+
+		--link-color: #fda238;
   	}
 
   	#name { filter: invert(); }
@@ -450,6 +458,7 @@ img.bio-image {
 	filter: opacity(40%);
 }
 
+h4.bio-image { color: #181719; }
 #content > h4.bio-image {
 	position: absolute;
 	margin: 0;
@@ -477,6 +486,71 @@ img.bio-image {
 }
 
 .invert { filter: invert(); }
+
+/********************/
+/* MARKDOWN CONTENT */
+/********************/
+div#markdown-content { 
+	min-width: 60%;
+	max-width: 1024px;
+}
+
+div#markdown-content, 
+div#markdown-content > pre {
+	text-wrap: unset;
+	text-align: left;
+	display: inline-block;
+}
+
+/* Name Headings */
+div#markdown-content > h4,
+div#markdown-content > h5,
+div#markdown-content > h6 {
+	margin: 0;
+	padding: 0;
+	font-size: 1.8em;
+	text-align: left;
+	background-color: #191919;
+	border: #191919 2px dashed;
+	border-radius: 6px;
+}
+
+/* Name Headings Padding */
+div#markdown-content > h4 > a,
+div#markdown-content > h5 > a,
+div#markdown-content > h6 > a {	padding: 2px; }
+
+/* Name Headings Recolor Links */
+div#markdown-content > h4 > a { color: var(--cyan-color); }
+div#markdown-content > h5 > a { color: var(--green-color); }
+div#markdown-content > h6 > a { color: var(--purp-color); }
+
+/* Text Content */
+div#markdown-content > pre {
+	width: 96%;
+
+	margin: 0;
+	margin-left: 1%;
+	text-align: left;
+	display: block;
+
+	padding: 12px 6px;
+	padding-left: 2%;
+	background-color: #19191924;
+
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+div#markdown-content > pre > code {
+	color: var(--text-color);
+}
+
+/* Markdown Loader Text */
+div#markdown-content > h2 {
+	font-weight: bold;
+	text-align: center;
+}
 
 /****************/
 /*FOOTER SECTION*/

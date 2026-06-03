@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!-- Hey it's me, the website code. pretty neat stuff here, steal whatever you need to code your own site! Source Code: https://github.com/BrandyBuizel/-brandondriesse.com -->
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="brandon driesse's portfolio website for animation and game development. coded the site myself!">
+	<meta name="keywords" content="brandon driesse, brandon, driesse, portfolio, animation, animator, games, game design, developer, brandybuizel, twitter">
+	<meta name="author" content="brandon driesse">
+	
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="icon" type="image/x-icon" href="../favicon/b.png"/>
+	<link rel="shortcut icon" type="image/x-icon" href="../favicon/b.png"/>
+	<link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+	<link rel="manifest" href="../favicon/site.webmanifest">
+
+	<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+	<script src="https://use.fontawesome.com/f9fc5e29a3.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+	<script src="../js/main.js"></script>
+	<script src="../js/gallery.js"></script>
+	<script src="../js/randomGif.js"></script>
+		
+	<title>brandon driesse's portfolio site</title>
+
+	<script src="https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.js"></script>
+</head>
+<body>
+	<div id="container">
+		<!-- Header & Navbar -->
+		<embed type="text/html" src="../_header.html" width="100%" height="280px"></embed><hr>
+			
+		<!--Main Content-->
+		<div id="content" class="center">
+			<!-- Container where parsed HTML will be injected -->
+   			<div id="markdown-content"><h2>Loading Content...</h2></div>
+			<script type="module">
+				import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
+				//const markdownFileUrl = "../transcripts/Owen Interviews IvanAlmighty and Tyler (Transcript).md";
+				const markdownFileUrl = "https://raw.githubusercontent.com/BrandyBuizel/newgroundszine.store/refs/heads/main/transcripts/Owen%20Interviews%20IvanAlmighty%20and%20Tyler%20(Transcript).md";
+				// Fetch File Content
+				fetch(markdownFileUrl)
+				.then(response => {
+					if (!response.ok) {
+						throw new Error(`Failed to fetch file: ${response.statusText}`);
+					}
+					return response.text(); // Extract plain text from the file
+				})
+				.then(markdownText => {
+					const htmlContent = marked.parse(markdownText);
+					document.getElementById('markdown-content').innerHTML = htmlContent;
+					/*
+					document.getElementById('markdown-content').innerHTML =
+					marked.parse(markdownText && '\n\nRendered by **marked**.');
+					*/
+				})
+				.catch(error => {
+					console.error('Error processing markdown:', error);
+				});
+			</script>
+			<hr><h3>Parsed by <a href="https://github.com/markedjs/marked">marked</a></h3>
+		</div>
+	
+		<!-- Footer -->
+		<embed type="text/html" src="../_footer.html" width="100%" height="86px"></embed>
+	</div>
+</body>
+</html>
