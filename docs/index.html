@@ -51,16 +51,12 @@
 				.then(markdownText => {
 					const htmlContent = marked.parse(markdownText);
 					document.getElementById('markdown-content').innerHTML = htmlContent;
-					/*
-					document.getElementById('markdown-content').innerHTML =
-					marked.parse(markdownText && '\n\nRendered by **marked**.');
-					*/
 				})
 				.catch(error => {
 					console.error('Error processing markdown:', error);
 				});
 			</script>
-			<hr><h3>Parsed by <a href="https://github.com/markedjs/marked">marked</a></h3>
+			<hr><h3>Rendered by <a href="https://github.com/markedjs/marked">marked</a>.</h3>
 		</div>
 	
 		<!-- Footer -->
