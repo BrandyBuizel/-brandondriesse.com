@@ -1,0 +1,38 @@
+<!--NEWGROUNDS RALLY TCG-->
+<div class="container">
+    <div class="box blue">
+        <h2 class="name">Lucky Boy</h2>
+        <a href="" class="buy">Activate</a>
+        <div class="circle"></div>
+        <img class="product" src="../../newgrounds/rally/images/LUCKY BOY.png" />
+    </div>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".box"), {
+            max: 15,
+            speed: 300,
+            easing: "cubic-bezier(.03,.98,.52,.99)",
+            scale: 1.05,
+        });
+    </script>
+    <script>
+        const card = document.querySelector(".card");
+
+        const updatePointerPosition = ({ x, y }) => {
+            card.classList.remove('rotate');
+            const rect = card.getBoundingClientRect();
+            const hw = rect.width / 2;
+            const hh = rect.height / 2;
+            const ratioX = (x - (rect.x + hw)) / hw;
+            const ratioY = (y - (rect.y + hh)) / hh;
+            card.style.setProperty("--ratio-x", ratioX);
+            card.style.setProperty("--ratio-y", ratioY);
+        };
+
+        card.addEventListener("pointermove", updatePointerPosition);
+
+        card.addEventListener("pointerleave", () => {
+            card.style.setProperty("--ratio-x", 0);
+            card.style.setProperty("--ratio-y", 0);
+        });
+    </script>
+</div>
