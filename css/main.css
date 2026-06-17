@@ -45,6 +45,14 @@ html {
 	overflow: hidden !important;
 }
 
+.sticky {
+	left: 0;
+    bottom: 0;
+    display: block;
+    position: fixed;
+}
+#T-Bot.sticky { margin-left: -4em; }
+
 /**************/
 /*MAIN CONTENT*/
 /**************/

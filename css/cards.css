@@ -1,12 +1,11 @@
 /* NEWGROUNDS RALLY CARDS CSS */
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,900;1,900&display=swap");
-
 :root {
   --main-bg: #131313;
   --box-bg: #232323;
   --name-color: #f8f8f8;
   --card-bg-text: #ffffff;
+
+  --card-orange-color: #dea54c;
 }
 
 body {
@@ -150,8 +149,12 @@ body {
   transform: translate3d(-50%, -50%, 0px) rotate(0deg);
 }
 
+.character-frame {
+  border-radius: 20px;
+}
+
 .container .box:hover .product {
-  transform: translate3d(-50%, -50%, 40px) rotate(0deg);
+  transform: translate3d(-50%, -50%, 24px) rotate(0deg);
 }
 .container .box:nth-child(1) .circle,
 .container .box:nth-child(1) .buy {
@@ -194,6 +197,7 @@ body {
 
 /* Colors */
 .blue {
+  background-image: url('../newgrounds/rally/images/iu_1607663_7061501.webp');
   background: radial-gradient(ellipse at right top, #1da3c3ed 0%, var(--box-bg) 96%, var(--box-bg) 100%);
 }
 .blue:before {
