@@ -5,7 +5,14 @@
   --name-color: #f8f8f8;
   --card-bg-text: #ffffff;
 
-  --card-orange-color: #dea54c;
+  --card-red-color: #eb0e2fed;
+  --card-red-highlight: #eb0e2fed;
+  --card-blue-color: #1da3c3ed;
+  --card-blue-highlight: #1da3c3ed;
+  --card-green-color: #9bdc28ed;
+  --card-green-highlight: #9bdc28ed;
+  --card-orange-color: #ffb30f;
+  --card-orange-highlight: #ffb30f;
 }
 
 body {
@@ -111,10 +118,10 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  transition: 0.5s;
+  transition: 0.2s;/*How long it takes to retract*/
   background: #ffffff;
   transform-style: preserve-3d;
   z-index: 10;
@@ -134,7 +141,7 @@ body {
   transform-style: preserve-3d;
   z-index: 10;
   opacity: 1;
-  transform: translate3d(-50%, -50%, 35px);
+  transform: translate3d(-50%, -50%, 32px);
 }
 
 .container .box .product {
@@ -149,25 +156,35 @@ body {
   transform: translate3d(-50%, -50%, 0px) rotate(0deg);
 }
 
-.character-frame {
+.card-backing, .character-frame {
   border-radius: 20px;
 }
 
 .container .box:hover .product {
-  transform: translate3d(-50%, -50%, 24px) rotate(0deg);
+  transform: translate3d(-50%, -50%, 30px) rotate(0deg);
 }
-.container .box:nth-child(1) .circle,
-.container .box:nth-child(1) .buy {
-  background: #9bdc28;
+
+.container .box:hover .card-backing {
+  transform: translate3d(-50%, -50%, -30px) scale(0.6);
 }
-.container .box:nth-child(2) .circle,
-.container .box:nth-child(2) .buy {
-  background: #1da3c3;
+
+.card-backing {
+  position: inherit;
+  top: -45.8%;
+  left: 50%;
+  max-width: 300px;
+
+  z-index: 21;
+  transition: 0.2s;
+  transform-style: preserve-3d;
+  transform: translate3d(-50%, -50%, 0px) rotate(0deg);
 }
-.container .box:nth-child(3) .circle,
-.container .box:nth-child(3) .buy {
-  background: #eb0e2f;
+
+.container .box .circle,
+.container .box .buy {
+  background: var(--card-orange-color);
 }
+
 .mode-switch {
   background-color: transparent;
   border: none;
@@ -177,6 +194,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .mode-switch.active .moon {
   fill: var(--name-color);
 }
@@ -196,24 +214,15 @@ body {
 }
 
 /* Colors */
-.blue {
-  background-image: url('../newgrounds/rally/images/iu_1607663_7061501.webp');
-  background: radial-gradient(ellipse at right top, #1da3c3ed 0%, var(--box-bg) 96%, var(--box-bg) 100%);
-}
-.blue:before {
-  background: linear-gradient(45deg, var(--box-bg), var(--box-bg), var(--box-bg), var(--box-bg), #1da3c3) border-box;
-}
+.red, .blue, .green, .orange { background: linear-gradient(var(--card-orange-color)); }
+.red:hover { background: radial-gradient(ellipse at right top, var(--card-red-color) 0%, var(--box-bg) 96%, var(--box-bg) 100%); }
+.red:before { background: linear-gradient(45deg, var(--box-bg), var(--box-bg), var(--box-bg), var(--box-bg), var(--card-red-color)) border-box; }
 
-.red {
-  background: radial-gradient(ellipse at right top, #eb0e2fed 0%, var(--box-bg) 96%, var(--box-bg) 100%);
-}
-.red:before {
-  background: linear-gradient(45deg, var(--box-bg), var(--box-bg), var(--box-bg), var(--box-bg), #eb0e2f) border-box;
-}
+.blue:hover { background: radial-gradient(ellipse at right top, var(--card-blue-color) 0%, var(--box-bg) 96%, var(--box-bg) 100%); }
+.blue:before { background: linear-gradient(45deg, var(--box-bg), var(--box-bg), var(--box-bg), var(--box-bg), var(--card-blue-color)) border-box; }
 
-.green {
-  background: radial-gradient(ellipse at right top, #9bdc28ed 0%, var(--box-bg) 96%, var(--box-bg) 100%);
-}
-.green:before {
-  background: linear-gradient(45deg, var(--box-bg), var(--box-bg), var(--box-bg), var(--box-bg), #9bdc28) border-box;
-}
+.green:hover { background: radial-gradient(ellipse at right top, var(--card-green-color) 0%, var(--box-bg) 96%, var(--box-bg) 100%); }
+.green:before { background: linear-gradient(45deg, var(--box-bg), var(--box-bg), var(--box-bg), var(--box-bg), var(--card-green-color)) border-box; }
+
+.orange:hover { background: radial-gradient(ellipse at right top, var(--card-orange-color) 0%, var(--box-bg) 96%, var(--box-bg) 100%); }
+.orange:before { background: linear-gradient(45deg, var(--box-bg), var(--box-bg), var(--box-bg), var(--box-bg), var(--card-orange-color)) border-box; }
