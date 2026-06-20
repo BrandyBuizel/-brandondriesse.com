@@ -1,4 +1,6 @@
 /* NEWGROUNDS RALLY CARDS CSS */
+@font-face { font-family: tekutekual; src: url('../fonts/tekutekual.ttf'); }
+
 :root {
   --main-bg: #131313;
   --box-bg: #232323;
@@ -77,20 +79,30 @@ body {
 .container .box .name {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 4px;
+  width: 96%;
+  font-size: 32px;
+
+  text-transform: uppercase;
+  font-family: tekutekual;
   text-align: center;
   color: var(--name-color);
-  width: 100%;
+
   transform-style: preserve-3d;
-  transform: translate3d(0, 0, 75px);
-  transition: 0.5s;
+  transform: translate3d(0, 0, 60px);
+  transition: 0.3s;
   opacity: 0;
   z-index: 10;
+
+  /* BOXING */
+  background-color: black;
+  padding: .2em 0;
 }
 
 .container .box:hover .name {
-  top: 40px;
+  top: 0;
   opacity: 1;
+  transition: 0.1s;
 }
 
 .container .box .buy {
@@ -145,6 +157,9 @@ body {
 }
 
 .container .box .product {
+  display: none;
+  visibility: hidden;
+
   position: inherit;
   top: 50%;
   left: 50%;
@@ -161,20 +176,24 @@ body {
 }
 
 .container .box:hover .product {
+  display: block;
+  visibility: visible;
   transform: translate3d(-50%, -50%, 30px) rotate(0deg);
 }
 
 .container .box:hover .card-backing {
-  transform: translate3d(-50%, -50%, -30px) scale(0.6);
+  visibility: hidden;
+  transform: translate3d(-50%, -250%, 20px) scale(0.86);
 }
 
 .card-backing {
+  visibility: visible;
   position: inherit;
-  top: -45.8%;
+  top: 50%;
   left: 50%;
   max-width: 300px;
 
-  z-index: 21;
+  z-index: 69;
   transition: 0.2s;
   transform-style: preserve-3d;
   transform: translate3d(-50%, -50%, 0px) rotate(0deg);
