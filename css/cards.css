@@ -79,13 +79,16 @@ body {
 .container .box .name {
   position: absolute;
   top: 0;
-  left: 4px;
-  width: 96%;
+  left: 1em;
+  width: 80%;
   font-size: 32px;
+  font-weight: 400;
 
   text-transform: uppercase;
   font-family: tekutekual;
-  text-align: center;
+  text-align: left;
+  text-indent: 1em;
+  
   color: var(--name-color);
 
   transform-style: preserve-3d;
@@ -95,7 +98,9 @@ body {
   z-index: 10;
 
   /* BOXING */
+  background: linear-gradient(0deg, #252525 48%, #555555 60%);
   background-color: black;
+  border-radius: 4px;
   padding: .2em 0;
 }
 
@@ -103,6 +108,10 @@ body {
   top: 0;
   opacity: 1;
   transition: 0.1s;
+}
+
+.name::before {
+  background-image: url('../newgrounds/rally/images/ng-tiny-icon-fave.png');
 }
 
 .container .box .buy {
@@ -164,7 +173,7 @@ body {
   top: 50%;
   left: 50%;
   max-width: 270px;
-  transition: 0.5s;
+
   z-index: 20;
   transition: 0.5s;
   transform-style: preserve-3d;
